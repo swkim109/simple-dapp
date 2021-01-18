@@ -4,10 +4,10 @@ $NETWORK_ID = "5777"
 $CHAIN_ID = "5777"
 $GAS_LIMIT = "0xB71B00" # 12,000,000
 
-$ALCHEMY_KEY = "E-SDQ0zgtGtaWmLzYVfjtuvjqKgTLWAZ"
+$ALCHEMY_KEY = ""
 $ALCHEMY_MAIN = "https://eth-mainnet.alchemyapi.io/v2/$ALCHEMY_KEY"
 
-$ARCHIVE_NODE_KEY = "11z2tihb4prai18p5v11z2thbzniy1a1"
+$ARCHIVE_NODE_KEY = ""
 $ARCHIVE_NODE = "https://api.archivenode.io/$ARCHIVE_NODE_KEY"
 
 $ACCOUNT_1 = "0xAFc4F9F3bA806dd2F8e47A524fFDa2418bBFc08a" #Roy
