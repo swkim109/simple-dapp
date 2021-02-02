@@ -75,8 +75,7 @@ function App() {
             setWeb3obj({web3: null, providerType: ""});
             
             //TODO-10
-            // 계정 잔액 액션 디스패치
-            //
+            store.dispatch(accountFetching({status: ""}));
         }
     }
     
