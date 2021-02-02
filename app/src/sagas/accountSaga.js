@@ -16,7 +16,7 @@ function createEventChannel({status, web3, account}) {
                 
                 //TODO-4
                 // 잔액조회
-                
+                web3.eth.getBalance(account).then(v=>emitter(v));
                 
             } else {
                 emitter(END);
