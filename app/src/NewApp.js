@@ -74,7 +74,7 @@ function App() {
             
             setWeb3obj({web3: null, providerType: ""});
             
-            //TODO-10
+            //
             store.dispatch(accountFetching({status: ""}));
         }
     }

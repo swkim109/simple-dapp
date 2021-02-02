@@ -10,6 +10,7 @@ function appReducer(state=null, action) {
         //  스토어 상태를 업데이트한다.
         
         
+        
         case Actions.APPLICATION_REFRESH :
             return {
                 ...state,

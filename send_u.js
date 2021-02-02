@@ -4,7 +4,7 @@ const contracts = require("./app/src/utils/contract.address");
 const daiContract = new web3.eth.Contract(abi.DAI, contracts.DAI_CONTRACT_ADDRESS);
 
 // TODO 메타마스크 게정
-const ACCOUNT_1 = "0xAFc4F9F3bA806dd2F8e47A524fFDa2418bBFc08a";
+const ACCOUNT_1 = "";
 const DAI_RICH = contracts.DAI_RICH_ADDRESS;
 
 module.exports = function(callback) {

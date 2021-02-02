@@ -47,11 +47,12 @@ export default function() {
     useEffect(() => {
         // TODO-1
         //  컨트랙트 인스턴스 생성
-        //
+        
         
         // TODO-2
         //  컨트랙트 인스턴스 생성 실행
-        //
+        
+        
         
         // 상태 구독
         const unsubscribe = store.subscribe(() => {
@@ -85,13 +86,14 @@ export default function() {
             
             if (contracts['dai']._address !== null && contracts['lender']._address !== null) {
                 
-                // TODO-3
-                // // 위임 액수 조회
-                //
+                // TODO-6
+                //  위임 액수 조회
                 
-                // TODO-4
-                // // 인출 가능 액수 조회
-                //
+                
+                // TODO-8
+                //  인출 가능 액수 조회
+                
+
                 
                 // 적립 액수 조회
                 contracts.lender.methods.balanceOfUnderlying().call()
@@ -124,9 +126,9 @@ export default function() {
             b = 0;
         }
         
-        // TODO-5
-        // // DAI 컨트랙트 approve
-        //
+        // TODO-3
+        //  DAI 컨트랙트 approve
+        
         
     }
     
@@ -144,9 +146,9 @@ export default function() {
             
             console.log(v, i, d);
             
-            // TODO-6
+            // TODO-5
             //  대여 함수 호출
-            //
+            
         }
         
     }
@@ -163,7 +165,7 @@ export default function() {
         
         // TODO-7
         //  반납 함수 호출
-        //
+        
         
     }
     
@@ -174,9 +176,10 @@ export default function() {
             return;
         }
         
-        // TODO-8
+        // TODO-9
         //  대여금 인출 함수 호출
-        //
+        
+        
     }
     
     const handleRepossess = () => {
@@ -206,9 +209,9 @@ export default function() {
         if (receipt) {
             if (receipt.events["Approval"] !== undefined) {
                 
-                // TODO-5-1
+                // TODO-4
                 //  사용승인 슬라이드 체크박스 업데이트
-                //
+                
                 
             } else if (receipt.events["Borrowed"] !== undefined) {
                 // 대여한 후
@@ -234,7 +237,7 @@ export default function() {
                 //
                 
             }
-            
+    
             localStorage.setItem("ItemData", JSON.stringify(data));
             
         }
